@@ -39,9 +39,9 @@ int main()
             }
         }
     }
-    for(i = (xmin*600);i<=(xmax*600);i++)//10000*
+    for(i = (xmin*100);i<=(xmax*100);i++)//10000*
     {
-        for(j = (ymin*600);j<=(ymax*600);j++)
+        for(j = (ymin*100);j<=(ymax*100);j++)
         {
             for(k = 0;k<n;k++)
             {
@@ -52,7 +52,7 @@ int main()
             }
         }
     }
-    s = (double)(cnt) / 360000;
+    s = (double)(cnt) / 10000;
     printf("%.2lf\n",s);
     return 0;
 }
@@ -71,7 +71,7 @@ int ffun(int i,int j,int x,int y,int z)
 int fun1(int x,int b,int i)
 {
     int j;
-    double a1 = x/600.0,b1 = b/600.0;
+    double a1 = x/100.0,b1 = b/100.0;
     for(j = 0;j<3;j++)
     {
         if(((double)a[3*i+j][0] *a1 + (double)a[3*i+j][1]*b1 + (double)a[3*i+j][2])*(double)a[3*i+j][3]<0)
