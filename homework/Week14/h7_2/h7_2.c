@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+int search_in();
 typedef struct a1
 {
     int a[2];
@@ -11,15 +12,15 @@ typedef struct a2{
 } st2;
 st2 HEAD1,*p1;
 st1 head,*p;
-int n,x1,y1,x2,y2,x3,y3;
+int n,x1,x2,y2,x3,y3,y11;
 int main ()
 {
     int i,j,k,x,y;
     scanf("%d",&n);
     for(i = 0;i<n;i++)
     {
-        scanf("%d %d %d %d %d %d",&x1,&y1,&x2,&y2,&x3,&y3);
-        if((x1-x2)*(y1+y2)+(x2-x3)*(y2+y3)+(x3-x1)*(y3+y1)<0){
+        scanf("%d %d %d %d %d %d",&x1,&y11,&x2,&y2,&x3,&y3);
+        if((x1-x2)*(y11+y2)+(x2-x3)*(y2+y3)+(x3-x1)*(y3+y11)<0){
             x = x3;
             y = y3;
             x3 = x2;
@@ -27,7 +28,7 @@ int main ()
             x2 = x;
             y2 = y;
         }
-        serach_in()
+        search_in();
     }
     return 0;
 }
@@ -46,7 +47,7 @@ int search_in()
             }else {
                 a2 = p1->head->a;
             }
-            if()放弃
+            //放弃
         }
     }
 }
