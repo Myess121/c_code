@@ -14,15 +14,28 @@ int main()
         cnt += a[i];
     }
     maxx = cnt;
-    for(int i = m;i<n;i++)
-    {
-        cnt -= a[i-m];
-        cnt += a[i];
-        if(cnt > maxx)
+    for(int j = 0;j<m;j++)
+    {   
+        cnt =0 ;
+        for(int i = 0;i<m-j ;i++)
         {
-            maxx = cnt;
-        } 
+            cnt += a[i];
+        }
+        if(cnt > maxx)
+            {
+                maxx = cnt;
+            }
+        for(int i = m-j;i<n;i++)
+        {
+            cnt -= a[i-m+j];
+            cnt += a[i];
+            if(cnt > maxx)
+            {
+                maxx = cnt;
+            } 
+        }
     }
+    
     cout << maxx << endl;
     return 0;
 }
