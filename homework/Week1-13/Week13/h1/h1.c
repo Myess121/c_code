@@ -5,6 +5,7 @@ int input(int *, int );
 int output(int *, int );  
 int main()  
 {  
+    //测试
 // 分别将输入2*n（n<100)个整数保存在两个数组中，比较对应  
 // 数组元素，将较小值保存在a数组中，较大值存入数组b中   
     int n, k, a[100], b[100];  
