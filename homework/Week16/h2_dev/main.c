@@ -7,10 +7,6 @@ int main()
     scanf("%s %s",a,b);
     FILE * fp = fopen(a,"r");
     FILE *f2 = fopen(b,"r");
-    if (!fp || !f2) {
-        printf("Error: Cannot open file.\n");
-        return 1;
-    }
     while((x = fgetc(f2))!=EOF)
     {
         rewind(fp);
