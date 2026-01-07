@@ -5,7 +5,7 @@ int main ()
     int n,m[100],i,j,k,t = 1,flag [100],max,flag2 = 0,max2,flag3 = 0,flag4;
     int a[100][10][10];
     scanf("%d",&n);
-    memset(flag , 0 ,sizeof(int));
+    memset(flag , 0 ,sizeof(flag));
     for(i = 0;i<n;i++)
     {
         scanf("%d",&m[i]);
